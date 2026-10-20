@@ -1,0 +1,99 @@
+# Loan Tracking System
+
+A web-based Loan Tracking System developed using Python, Streamlit, and MySQL to simplify customer management, loan tracking, EMI calculations, payment recording, and financial reporting.
+
+Features
+
+- **Dashboard:** View customer statistics, loan summaries, and payment information.
+- **Customer Management:** Add and view customer details.
+- **Loan Management:** Record loan amounts, interest rates, tenure, dates, and loan status.
+- **EMI Calculator:** Calculate monthly instalments using the reducing-balance method.
+- **Payment Tracking:** Record payments, payment methods, and payment status.
+- **Reports:** View loan summaries and customer-wise financial information.
+
+## Technology Stack
+
+- Python
+- Streamlit
+- MySQL
+- SQL
+- Pandas
+
+## Project Structure
+
+```text
+LoanTrackingSystem/
+├── app.py
+├── database.py
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd LoanTrackingSystem
+```
+
+Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual repository URL.
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate it on Windows PowerShell:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure MySQL
+
+- Install and start MySQL.
+- Create the project database.
+- Configure the database connection in `database.py`.
+- Create the required tables using your SQL schema.
+
+Do not commit database passwords or other secret credentials to GitHub.
+
+### 5. Run the application
+
+```bash
+streamlit run app.py
+```
+
+Open the local URL displayed in the terminal.
+
+## Learning Outcomes
+
+- Python application development
+- Relational database connectivity
+- SQL queries and data management
+- Financial calculation logic
+- Building interactive web interfaces
+- Generating reports from structured data
+
+## Future Enhancements
+
+- User authentication and role-based access
+- Automated EMI schedules
+- Accurate principal and interest balance tracking
+- Payment reminders
+- Data visualization and downloadable reports
+- Secure online deployment
+
+## Disclaimer
+
+This project is intended for educational and demonstration purposes. Financial calculations and payment records should be validated before use in real-world lending operations.
